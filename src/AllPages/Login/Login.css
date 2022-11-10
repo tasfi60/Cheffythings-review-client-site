@@ -1,0 +1,131 @@
+
+
+
+     
+      /* body{
+          background-color: #080710;
+      } */
+      
+      .form-container{
+          height: 620px;
+          width: 600px;
+          margin-left: 650px;
+          margin-top: 350px;
+          margin-bottom: -200px;
+          background-color: #e45604;
+          background-image: url("../../images/login.jpg");
+          /* background-image: linear-gradient(62deg, #8a4218 0%, #fcd69e 24%, #F7CE68 49%, #ffe492 75%, #ca8555 100%); */
+          transform: translate(-50%,-50%);
+          border-radius: 10px;
+          color: #080710;
+          backdrop-filter: blur(10px);
+          border: 2px solid rgba(255, 255, 255, 0.767);
+          box-shadow: 0 0 40px rgba(8,7,16,0.6);
+          padding: 50px 35px;
+          font-family: 'Fasthand', cursive;
+          font-family: 'Lobster', cursive;
+      }
+      form *{
+          font-family: 'Poppins',sans-serif;
+          color: #000000;
+          letter-spacing: 0.5px;
+          outline: none;
+          border: none;
+          font-family: 'Fasthand', cursive;
+          font-family: 'Lobster', cursive;
+      }
+      form h3{
+          font-size: 32px;
+          font-weight: 500;
+          line-height: 42px;
+          text-align: center;
+      }
+       
+      label{
+          display: block;
+          margin-top: 30px;
+          font-size: 16px;
+          font-weight: 500;
+      }
+      input{
+          display: block;
+          height: 50px;
+          width: 100%;
+          background-color: rgba(11, 1, 1, 0.317);
+          border-radius: 3px;
+          padding: 0 10px;
+          margin-top: 8px;
+          font-size: 14px;
+          font-weight: 300;
+      }
+      ::placeholder{
+          color: #000000;
+      }
+      .login-btn{
+          margin-top: 40px;
+          width: 100%;
+          background-color: #602b0c;
+          background-image: linear-gradient(62deg, #50301d 0%, #50422d 24%, #a58636 49%, #ffe492 75%, #ca8555 100%);
+          color: #080710;
+          padding: 15px 0;
+          font-size: 18px;
+          font-weight: 600;
+          border-radius: 15px;
+          cursor: pointer;
+      }
+    
+      .social{
+        margin-top: -30px;
+        display: flex;
+      }
+      .social div{
+        width: 200px;
+        border-radius: 3px;
+        height: 30px;
+        margin-top: -30px;
+        padding: 5px 10px 10px 5px;
+        background-color: rgba(255,255,255,0.27);
+        color: black;
+        text-align: center;
+      }
+      .social div:hover{
+        background-color: rgba(186, 185, 185, 0.47);
+      }
+      .s-icon{
+    
+        margin-top: -20px;
+      }
+      
+       
+
+      /* for mobile */
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+
+    .form-container{
+        
+        margin-left: -260px;
+        position: fixed;
+        overflow: hidden;
+        
+    }
+    
+}
+
+/* for tablet */
+
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    .form-container{
+        
+        margin-left: 200px;
+    }
+
+    
+}
+
+/* for desktop */
+@media only screen and (min-width: 1025px) and (max-width: 1200px){
+
+    
+
+}

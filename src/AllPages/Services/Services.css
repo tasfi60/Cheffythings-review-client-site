@@ -1,0 +1,161 @@
+.course-container{
+    overflow: hidden;
+    font-family: 'Fasthand', cursive;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Vollkorn', serif;
+    
+}
+
+.sideBar{
+    background-color: #caf3de;
+    background-image: linear-gradient(0deg, #e2d6e2 0%, #e1e4b1 100%);
+
+}
+
+.lefttopicbar{
+    margin-top: 20px;
+    width: 80%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    
+    
+}
+
+
+.topicName{
+    height: 80px;
+    padding: 20px;
+    border-radius: 100px;
+    background-color: #8bffae;
+    box-shadow: 5px 10px 18px #6e6b6b;
+    cursor: pointer;
+}
+
+.topicName:hover{
+    background-color: rgb(43, 189, 175);
+}
+
+.topicbtn{
+    text-decoration: none;
+    color: #1a1414;
+
+}
+
+
+
+.topics-area{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    font-family: 'Fasthand', cursive;
+    font-family: 'Lobster', cursive;
+   
+    
+   
+}
+
+
+.grid-tepmplate{
+    /* display: grid;
+    grid-template-columns: repeat(3,1fr); */
+    border: 1px solid rgb(162, 160, 158);
+    width: 350px;
+    height: 600px;
+    padding: 10px;
+    background-color: #ffcdb0;
+    background-image: linear-gradient(62deg, #ffdcc8 0%, #fcd69e 24%, #ffebb9 49%, #f6d470 75%, #f9a162 100%);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    box-shadow: 5px 10px 18px #928c8c;
+    
+   
+}
+
+.grid-tepmplate img{
+    
+    height: 280px;
+    width: 330px;
+    margin-top: 5px;
+    border: 1px solid  rgb(252, 232, 217);
+
+}
+
+.btn{
+  border: none;
+  background-color: #e00ce0;
+  background-image: linear-gradient(0deg, #ae8eae 0%, #0fe3fb 100%);
+  font-family: 'Fasthand', cursive;
+  font-family: 'Pacifico', cursive;
+  font-family: 'Vollkorn', serif;
+  font-weight: 700;
+
+}
+
+
+/* for mobile */
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+
+    
+    
+    .topics-area{
+
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    
+    
+}
+
+/* for tablet */
+
+@media only screen and (min-width: 481px) and (max-width: 768px){
+
+    .topics-area{
+
+        grid-template-columns: repeat(2,1fr);
+        gap: 4px;
+       
+        
+       
+    }
+
+    .topicbtn{
+        font-size: 14px;
+        
+    
+    }
+
+    .sideBar{
+        padding-left:-10px;
+    }
+
+
+    .topicName{
+        width: 180px;
+        margin-left:-20px ;
+    }
+
+}
+
+/* for desktop */
+@media only screen and (min-width: 1025px) and (max-width: 1200px){
+    
+    
+    .topics-area{
+
+        grid-template-columns: repeat(2,1fr);
+        gap: 4px;
+       
+        
+       
+    }
+
+    .topicbtn{
+        font-size: small;
+    
+    }
+
+
+    
+
+}
