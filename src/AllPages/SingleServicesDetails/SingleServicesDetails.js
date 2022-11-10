@@ -91,7 +91,7 @@ const SingleServicesDetails = () => {
                   </Card.Text>
                   
                    <Card.Title><b>Price: {Price}</b></Card.Title>
-                   <Button className='access-btn1'>Get Premium Access</Button>
+                   <Button onClick={handleNavigate} className='access-btn1'>Add Review</Button>
                  </Card.Body>
             </Card>
         </div>
@@ -130,12 +130,7 @@ const SingleServicesDetails = () => {
         
 
         
-<div className='Service-btn-container container'>
-            <button onClick={handleNavigate} className='border  border-1 border-warning rounded'>
-             Add Review
-             </button>
-             
-                   </div>
+
 
         </div>         
     
