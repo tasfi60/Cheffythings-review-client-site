@@ -31,20 +31,10 @@ const SingleServicesDetails = () => {
       else
       {
 
-        navigate('/Login');
+        // navigate('/Login');
 
-          //  toast message displayed
-     
-             
-             
-                //  toast(`You have to Login First! Click Here:{}`, {
-                //      position: toast.POSITION.TOP_CENTER,
-                //      className:'w-100 p-5 fw-bold bg-light'
-                //  });
-     
-             
-     
-             
+          alert('You have to Log in First!',)
+          
          
          }
        
@@ -92,6 +82,7 @@ const SingleServicesDetails = () => {
                   
                    <Card.Title><b>Price: {Price}</b></Card.Title>
                    <Button onClick={handleNavigate} className='access-btn1'>Add Review</Button>
+                   <p>Click here to log in: <Link to={'/Login'}>log in</Link></p>
                  </Card.Body>
             </Card>
         </div>
