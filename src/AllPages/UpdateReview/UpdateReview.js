@@ -27,7 +27,7 @@ const UpdateReview = () => {
      const handleUpdateReview = event =>{
         event.preventDefault();
         console.log(review);
-        fetch(`http://localhost:5000/review/${update._id}`,{
+        fetch(`https://food-app-server.vercel.app/review/${update._id}`,{
               method: 'PUT',
               headers:{
                 'content-type': 'application/json'

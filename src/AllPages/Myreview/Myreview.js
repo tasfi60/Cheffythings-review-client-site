@@ -21,7 +21,7 @@ const Myreview = () => {
      
        
      useEffect(()=>{
-        fetch(`http://localhost:5000/review?email=${user.email}`, {
+        fetch(`https://food-app-server.vercel.app/review?email=${user.email}`, {
             headers: {
                 authorization: `Bearer ${localStorage.getItem('cheffytoken')}`
             }
@@ -57,7 +57,7 @@ const Myreview = () => {
         // console.log(r);
          
         if(agree){
-            fetch(`http://localhost:5000/review/${r}`,{
+            fetch(`https://food-app-server.vercel.app/review/${r}`,{
                 method: 'DELETE'
 
             })

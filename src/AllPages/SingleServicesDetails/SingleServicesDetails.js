@@ -51,7 +51,7 @@ const SingleServicesDetails = () => {
     
 
     useEffect(()=>{
-        fetch(`http://localhost:5000/review?service=${_id}`)
+        fetch(`https://food-app-server.vercel.app/review?service=${_id}`)
         .then(res => res.json())
         .then(data => setReview(data));
     },[_id])

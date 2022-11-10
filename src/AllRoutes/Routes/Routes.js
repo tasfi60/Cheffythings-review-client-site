@@ -20,18 +20,18 @@ export const routes = createBrowserRouter([
         children :[
             {
                 path:'/',
-                loader: () => fetch ('http://localhost:5000/homeservices'),
+                loader: () => fetch ('https://food-app-server.vercel.app/homeservices'),
                 element: <Home></Home>
             },
             {
                 path:'/Services',
-                loader: () => fetch ('http://localhost:5000/services'),
+                loader: () => fetch ('https://food-app-server.vercel.app/services'),
                 element: <Services></Services>
             },
             {
                 path:'/Services/:id',
                 loader: async ({params}) => {
-                    return fetch(`http://localhost:5000/services/${params.id}`)
+                    return fetch(`https://food-app-server.vercel.app/services/${params.id}`)
                      
                 },
                 element: <SingleServicesDetails></SingleServicesDetails>
@@ -43,7 +43,7 @@ export const routes = createBrowserRouter([
             {
                 path:'/Review/:id',
                 loader: async ({params}) => {
-                    return fetch(`http://localhost:5000/services/${params.id}`)
+                    return fetch(`https://food-app-server.vercel.app/services/${params.id}`)
                      
                 },
                 element: <ReviewForm></ReviewForm>
@@ -59,7 +59,7 @@ export const routes = createBrowserRouter([
             {
                 path:'/Updatereview/:id',
                 loader: async ({params}) => {
-                    return fetch(`http://localhost:5000/review/${params.id}`)
+                    return fetch(`https://food-app-server.vercel.app/review/${params.id}`)
                      
                 },
                 element: <PrivateRoute><UpdateReview></UpdateReview></PrivateRoute>
