@@ -94,7 +94,7 @@ const UpdateReview = () => {
                                 <div className="input-group mb-3">
                                     <span className="input-group-text bg-light"></span>
                                     <textarea class="form-control" onChange={handleInputChange} name="message" defaultValue={update.message} placeholder="Update review here" id="floatingTextarea" required></textarea>
-                                    {/* <input type="text" className="form-control" name="message" placeholder="text" required /> */}
+                                    
                                 </div>
 
                                
