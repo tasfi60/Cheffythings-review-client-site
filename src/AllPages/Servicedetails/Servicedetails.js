@@ -9,7 +9,7 @@ import useTitle from '../hooks/useTitle';
 
 const Servicedetails = ({sname}) => {
     useTitle('Service Details')
-    // const {image,name,description,Price}= cname;
+    
     
    
     const navigate = useNavigate();
