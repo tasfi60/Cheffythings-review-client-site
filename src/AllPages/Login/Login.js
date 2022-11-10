@@ -129,8 +129,7 @@ const Login = () => {
           <div onClick={handleGoogleSignIn} className=' mx-3'><FaGoogle className='ms-3'></FaGoogle><p className='s-icon'>Google</p></div>
           <div className='mx-3 mb-5 fb'><FaFacebook className='ms-2'></FaFacebook><p className='s-icon'>Facebook</p></div>
           <div  onClick={handleGithubSignIn} className=' mx-3'><FaGithub className='ms-3'></FaGithub><p className='s-icon'>Github</p></div>
-          {/* <div className='go mb-5'><FaFacebook className='me-1' ></FaFacebook>Facebook</div>
-          <div className='go'><FaGithub className='me-1'></FaGithub>Github</div> */}
+          {/* <div className='go mb-5'> */}
         </div>
     </form>
     </div>
