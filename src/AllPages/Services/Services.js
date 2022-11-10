@@ -1,16 +1,22 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Servicedetails from '../Servicedetails/Servicedetails';
-import HomeService from '../Home/HomeService/HomeService';
 import './Services.css';
 import { Link,useLoaderData } from 'react-router-dom';
 import useTitle from '../hooks/useTitle';
+import { AuthContext } from '../../Context/AuthProvider/AuthProvider';
+import { Spinner } from 'react-bootstrap';
 
 const Services = () => {
   useTitle('Services')
     const services = useLoaderData();
     // console.log(services);
+    const {loading} = useContext(AuthContext);
+
+    if(loading){
+        return <Spinner animation='border' variant='primary'/>
+    }
 
    
     return (

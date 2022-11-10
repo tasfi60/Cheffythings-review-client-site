@@ -9,7 +9,7 @@ import useTitle from '../hooks/useTitle';
 
 const Login = () => {
     useTitle('Login')
-    const {providerLogin,signIn,setLoading,setUser} = useContext(AuthContext);
+    const {providerLogin,signIn,setLoading,setUser,loading} = useContext(AuthContext);
     const navigate = useNavigate();
 
     const googleProvider = new GoogleAuthProvider();
@@ -19,6 +19,12 @@ const Login = () => {
     const location = useLocation();
 
     const from = location.state?.from?.pathname || '/';
+
+    
+
+    if(loading){
+        return <Spinner animation='border' variant='primary'/>
+    }
 
 
 

@@ -3,16 +3,19 @@ import { AuthContext } from '../../Context/AuthProvider/AuthProvider';
 import { FaUser,FaLock,FaGoogle,FaGithub,FaFacebook,FaEnvelope,FaImage } from "react-icons/fa";
 import { Link, useNavigate,useLocation } from 'react-router-dom';
 import './Register.css';
+import { Spinner } from 'reactstrap';
 import useTitle from '../hooks/useTitle';
 
 const Register = () => {
     useTitle('Register')
-       
+    
+    
     const [error, setError] = useState('');
-    const [accepted, setAccepted] = useState(false);
-    const { createUser, updateUserProfile, verifyEmail } = useContext(AuthContext);
+    const { createUser, updateUserProfile, verifyEmail,loading } = useContext(AuthContext);
  
-
+    if(loading){
+        return <Spinner animation='border' variant='primary'/>
+    }
 
     const handleSubmit = event => {
         event.preventDefault();
@@ -56,10 +59,7 @@ const Register = () => {
             .catch(error => console.error(error));
     }
 
-    // const handleAccepted = event => {
-    //     setAccepted(event.target.checked)
-    // }
-
+  
 
     return (
         <div className='container mb-1 p-5'>

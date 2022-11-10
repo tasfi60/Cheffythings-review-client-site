@@ -10,6 +10,7 @@ import Alert from 'react-bootstrap/Alert';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './SingleServicesDetails.css';
+import { Spinner } from 'react-bootstrap';
 import useTitle from '../hooks/useTitle';
 
 
@@ -40,9 +41,14 @@ const SingleServicesDetails = () => {
        
   
     }
+    
+
+    
   
-    const {user} = useContext(AuthContext);
+    const {user,loading} = useContext(AuthContext);
     const[review,setReview] = useState([]);
+
+    
 
     useEffect(()=>{
         fetch(`http://localhost:5000/review?service=${_id}`)
@@ -53,7 +59,9 @@ const SingleServicesDetails = () => {
 
     console.log(review);
   
-
+    if(loading){
+      return <Spinner animation='border' variant='primary'/>
+  }
 
 
 
