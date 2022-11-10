@@ -119,9 +119,10 @@ const Home = () => {
             <Card className="text-dark fw-bolder mt-5">
                     <Image className='bg-img1' src={logo5} alt="" />
                     <Card.ImgOverlay>
-                     <Card.Text className='text-container'>
+                     <Card.Text className='text-container1'>
                      <Card.Title className='fs-2 fw-bold container'>Why I have started this?</Card.Title>
                       Okay, the answer is I have great passion and love for cooking.Also i feel happy to serve delicious foods to the people around me. Thats why , i started this service to serve people and also fullfil my passion.
+                      
                      
                      </Card.Text>
                     </Card.ImgOverlay>

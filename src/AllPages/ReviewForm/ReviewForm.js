@@ -18,12 +18,14 @@ const ReviewForm = () => {
             const cname = form.name.value;
             const email = form.email.value;
             const message = form.message.value;
+            const date = form.date.value;
             const photo = user.photoURL;
 
             const review = {
                 service: _id,
                 ServiceName: name,
                 Price: Price,
+                date: date,
                 customer: cname,
                 message,
                 email,
@@ -68,6 +70,10 @@ const ReviewForm = () => {
                                 <div className="input-group mb-3">
                                     <span className="input-group-text bg-light"></span>
                                     <input type="email" className="form-control" name="email" placeholder="Email" required />
+                                </div>
+                                <div className="input-group mb-3">
+                                    <span className="input-group-text bg-light"></span>
+                                    <input type="text" className="form-control" name="date" placeholder="date" required />
                                 </div>
                                 <div className="input-group mb-3">
                                     <span className="input-group-text bg-light"></span>
