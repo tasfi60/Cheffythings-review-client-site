@@ -4,7 +4,7 @@ import { Link, useLoaderData,useNavigate } from 'react-router-dom';
 import Card from 'react-bootstrap/Card';
 import Image from 'react-bootstrap/Image';
 import { Button } from 'react-bootstrap';
-import { FaUser,FaLock,FaGoogle,FaGithub,FaFacebook,FaEnvelope,FaImage } from "react-icons/fa";
+import { FaUser,FaLock,FaGoogle,FaGithub,FaFacebook,FaEnvelope,FaImage,FaSadTear } from "react-icons/fa";
 import { AuthContext } from '../../Context/AuthProvider/AuthProvider';
 import Alert from 'react-bootstrap/Alert';
 import { ToastContainer, toast } from 'react-toastify';
@@ -72,7 +72,7 @@ const SingleServicesDetails = () => {
 
             <h3>{title}</h3>
               <Card> 
-                      <div className='img-container container '>
+                      <div className='imgcontainer container '>
                       <Card.Img variant='top'  className='card-img' src={image} />
                       <Card.Img variant='top'  className='card-img' src={img} />
                       </div>
@@ -94,8 +94,13 @@ const SingleServicesDetails = () => {
                  </Card.Body>
             </Card>
         </div>
+        <div className='m-5 p-5 fs-2 Service-title-container'>
+            {
+                review.length?<h4 className='fs-2'>Reviews of Customers</h4> : <div className='m-5 p-5'>No Reviews were Added..<FaSadTear className='container'></FaSadTear></div>
+            }
+           </div>
 
-        <h3 className='Service-title-container'>Customer Review</h3>
+       
         <div className='review-section container mt-5'>
         {
           review.map(R =>
