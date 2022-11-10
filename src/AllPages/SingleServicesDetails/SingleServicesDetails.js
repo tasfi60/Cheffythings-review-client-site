@@ -6,8 +6,6 @@ import Image from 'react-bootstrap/Image';
 import { Button } from 'react-bootstrap';
 import { FaUser,FaLock,FaGoogle,FaGithub,FaFacebook,FaEnvelope,FaImage,FaSadTear } from "react-icons/fa";
 import { AuthContext } from '../../Context/AuthProvider/AuthProvider';
-import Alert from 'react-bootstrap/Alert';
-import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './SingleServicesDetails.css';
 import { Spinner } from 'react-bootstrap';
