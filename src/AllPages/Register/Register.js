@@ -1,6 +1,6 @@
 import React,{useContext,useState} from 'react';
 import { AuthContext } from '../../Context/AuthProvider/AuthProvider';
-import { FaUser,FaLock,FaGoogle,FaGithub,FaFacebook,FaEnvelope,FaImage } from "react-icons/fa";
+import { FaUser,FaLock,FaEnvelope,FaImage } from "react-icons/fa";
 import { Link, useNavigate,useLocation } from 'react-router-dom';
 import './Register.css';
 import { Spinner } from 'reactstrap';
