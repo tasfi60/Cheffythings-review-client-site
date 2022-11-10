@@ -54,7 +54,7 @@ const Myreview = () => {
     const handleDelete = r =>{
           
         const agree = window.confirm(`Are you sure you want to delete?`)
-        // console.log(r);
+       
          
         if(agree){
             fetch(`https://food-app-server.vercel.app/review/${r}`,{
