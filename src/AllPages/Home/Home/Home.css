@@ -10,7 +10,7 @@
 
 .bg-img{
     height: 600px;
-    width: 1200px;
+    width: 1300px;
     /* margin-left: 300px; */
     box-shadow: 5px 10px 18px #727171;
     border: none;
@@ -19,7 +19,7 @@
 }
 
 .bg-img1{
-    width: 1500px;
+    width: 100%;
     box-shadow: 5px 10px 18px #565656;
 }
 

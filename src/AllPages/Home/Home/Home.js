@@ -12,6 +12,9 @@ import { useLoaderData,useNavigate } from 'react-router-dom';
 import './Home.css';
 import { Image } from 'react-bootstrap';
 import useTitle from '../../hooks/useTitle';
+import Contact from '../Contact/Contact';
+import Aboutme from '../Aboutme/Aboutme';
+import Subscribe from '../subscribe/Subscribe';
 
 const Home = () => {
     useTitle('Home')
@@ -114,8 +117,13 @@ const Home = () => {
  
 
             </div>
+            <div>
+              <Aboutme></Aboutme>
+            </div>
+         
+           
 
-            <div className='mt-5'>
+            {/* <div className='mt-5'>
             <Card className="text-dark fw-bolder mt-5">
                     <Image className='bg-img1' src={logo5} alt="" />
                     <Card.ImgOverlay>
@@ -127,7 +135,15 @@ const Home = () => {
                      </Card.Text>
                     </Card.ImgOverlay>
             </Card>
+            </div> */}
+            <div>
+              <Contact></Contact>
             </div>
+
+            <div className='w-100 mt-5'>
+            <Subscribe></Subscribe>
+            </div>
+            
             
         </div>
     );
